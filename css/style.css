@@ -1,0 +1,141 @@
+body{
+  color:#fff;
+  padding:20px;
+  background: #000;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+video.fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 110%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+img{
+  opacity: 0.8;
+}
+.sliders{
+  margin-left:15px;
+  margin-right: 15px;
+}
+.slider-box{
+  height:60px;
+  width:60px;
+  margin-right: 10px;
+  /* background: red; */
+  margin-bottom: 20px;
+}
+.slider-box img{
+  height:70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  fill: #fff;
+
+}
+.youtube{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.video-selection{
+  padding: 30px;
+}
+.youtube-button{
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  width:50px;
+  cursor: pointer;
+}
+.youtube-button:hover{
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+#video-form{
+    margin-top: 15px;
+    display: none;
+}
+iframe{
+  display: none;
+}
+.text-muted{
+  color:#fff !important;
+  opacity: 0.7;
+}
+.cog{
+  position: absolute;
+  top: 0;
+  right:0;
+  z-index: 10;
+  padding:20px;
+}
+.fa-cog{
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  opacity: .8;
+  cursor: pointer;
+}
+.fa-cog:hover{
+  -webkit-transition: opacity  0.5s ease;
+  -moz-transition: opacity  0.5s ease;
+  -o-transition: opacity  0.5s ease;
+  transition: opacity  0.5s ease;
+  opacity: 1;
+}
+h4{
+  margin-bottom: 15px;
+}
+#settings{
+  position: absolute;
+  top: 0;
+  right:0;
+  width:33%;
+  bottom:0;
+  background: rgba(104, 117, 226, 0.5);
+  padding:20px;
+  visibility: hidden;
+  overflow-y: scroll;
+}
+#settings img{
+  width:100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+#settings img:hover{
+  opacity: 0.7;
+}
+#settings h2,h4{
+  margin-bottom: 30px;
+}
+#video-control span{
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  display: none;
+  cursor: pointer;
+  background: #fff;
+  font-size: 14px;
+  opacity: 0.8;
+  color: rgb(104, 117, 226);
+}
+#video-control span:hover{
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
