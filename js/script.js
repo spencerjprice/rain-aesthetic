@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+
+
   // Sound Effect Loops
   function soundsLoaded() {
     var n = 1;
@@ -159,5 +162,13 @@ $(document).ready(function() {
   $(".settings-img").click(function() {
     $(".fullscreen").attr("src", "assets/rain" + $(this).attr("data-id") + ".mp4");
   });
+
+  $('.form-check-input').change(function() {
+    if($(this).attr("data-id") == 1){
+      $(".sliders").toggle();
+    } else {
+      $(".youtube").toggle();
+    }
+     });
 
 });
